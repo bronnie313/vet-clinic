@@ -115,9 +115,9 @@ Example commands:
 ```
 --->
 
-### Install
+<!-- ### Install
 
-Install this project with:
+Install this project with: -->
 
 <!--
 Example command:
@@ -130,7 +130,7 @@ Example command:
 
 ### Usage
 
-To run the project, execute the following command:` \? to see commands `
+To run the project, execute the following command:` psql -d vet_clinic `
 
 <!--
 Example command:
@@ -142,7 +142,7 @@ Example command:
 
 ### Run tests
 
-To run tests, run the following command: ` \d vet_clinic `
+To run tests, run the following command: ` psql -d vet_clinic -f path/vet_clinic.sql `
 
 <!--
 Example command:
@@ -152,9 +152,9 @@ Example command:
 ```
 --->
 
-### Deployment
+<!-- ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: -->
 
 <!--
 Example:
@@ -170,7 +170,6 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
