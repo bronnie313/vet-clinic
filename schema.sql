@@ -7,3 +7,8 @@
     weight_kg DECIMAL(10, 2) 
 );
 ALTER TABLE animals ADD COLUMN species VARCHAR(255);
+CREATE TABLE owners (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    full_name VARCHAR(255) NOT NULL,
+    age INT NOT NULL
+);
