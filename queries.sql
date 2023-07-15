@@ -37,7 +37,9 @@ SELECT * FROM animals JOIN species ON animals.species_id = species.id WHERE spec
 SELECT owners.full_name, animals.name FROM owners LEFT JOIN animals ON owners.id = animals.owner_id ORDER BY owners.full_name;
 SELECT animals.name FROM animals JOIN owners ON animals.owner_id = owners.id JOIN species ON animals.species_id = species.id WHERE owners.full_name = 'Jennifer Orwell' AND species.name = 'Digimon';
 SELECT animals.name FROM animals JOIN owners ON animals.owner_id = owners.id WHERE owners.full_name = 'Dean Winchester' AND animals.escape_attempts = 0;
-SELECT owners.full_name FROM owners JOIN animals ON owners.id = animals.owner_id GROUP BY owners.full_name ORDER BY COUNT(*) DESC LIMIT 1;
+SELECT owners.full_name FROM owners
+JOIN animals ON owners.id = animals.owner_id 
+GROUP BY owners.full_name ORDER BY COUNT(*) DESC LIMIT 1;
 
 
 
