@@ -99,14 +99,16 @@ JOIN animals a ON v.animals_id = a.id
 LEFT JOIN specializations s ON vt.id = s.vet_id AND a.species_id = s.species_id
 WHERE s.vet_id IS NULL;
 
-
 SELECT s.name AS specialty_name, COUNT(*) AS visit_count
 FROM visits v
 JOIN animals a ON v.animals_id = a.id
-JOIN specializations sp ON a.species_id = sp.species_id
-JOIN vets vt ON sp.vet_id = vt.id
-JOIN species s ON sp.species_id = s.id
-WHERE vt.name = 'Maisy Smith'
+JOIN species s ON a.species_id = s.id
+WHERE v.vet_id IN (
+  SELECT id
+  FROM vets
+  WHERE name = 'Maisy Smith'
+)
 GROUP BY s.name
 ORDER BY visit_count DESC
 LIMIT 1;
+
