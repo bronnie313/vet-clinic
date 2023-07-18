@@ -54,3 +54,6 @@ INSERT INTO visits (animals_id, vet_id, visit_date) VALUES (4, 2, '2020-02-27');
 INSERT INTO visits (animals_id, vet_id, visit_date) VALUES (4, 2, '2020-08-03');
 INSERT INTO visits (animals_id, vet_id, visit_date) VALUES (7, 3, '2020-05-24');
 INSERT INTO visits (animals_id, vet_id, visit_date) VALUES (7, 1, '2021-01-11');
+
+INSERT INTO visits (animals_id, vet_id, visit_date) SELECT * FROM (SELECT id FROM animals) animals_ids, (SELECT id FROM vets) vet_id, generate_series('1980-01-01'::timestamp, '2021-01-01', '4 hours') visit_timestamp;
+INSERT INTO owners (full_name, email) select 'Owner ' || generate_series(1,2500000), 'owner_' || generate_series(1,2500000) || '@mail.com';
