@@ -177,11 +177,11 @@ Example:
 - Twitter: [@bisaso_r](https://twitter.com/bisaso_r)
 - LinkedIn: [Ronald Bisaso](https://linkedin.com/in/BisasoRonald)
 
-<!-- 👤 **Author2**
+👤 **Emmnauel Musangamfura**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)  -->
+- [GitHub](https://github.com/musangamfure)
+- [Twitter](https://twitter.com/musangamfure)
+- [LinkedIn](https://www.linkedin.com/in/musangamfurae)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
